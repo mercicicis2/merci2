@@ -1,0 +1,344 @@
+/* Basic styles */
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none; 
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#1a1b18, #10110f, #1a1b18);
+    display: flex;
+    position: relative;
+    top: 10px
+}
+/* HEADER */ 
+/* DEFAULT */ 
+header{
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background: linear-gradient(#1a1b18 ,  rgb(39, 42, 48) , #1a1b18);
+    color: white;
+    width: 100%;
+    height: 60px;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+    margin-inline: auto;
+
+    font-size: 1.2em;
+}
+.menubutton{
+display: none;
+}
+
+.logo{
+margin-left: -10px;
+width: 180px;
+height: 100%;
+border: 1px solid rgb(255, 0, 212);
+
+background-image: url(../img/logo.svg);
+background-size: 90%;
+background-repeat: no-repeat;
+background-position: center;
+filter: invert(49%) sepia(94%) saturate(2525%) hue-rotate(161deg) brightness(95%) contrast(101%);
+border: 1px solid transparent;
+}
+
+
+header nav ul{
+    display: flex;
+    gap: 13px;
+}
+
+.account{
+    display: flex;
+    width: 150px;
+    height: 100%;
+    border: 1px solid transparent;
+    justify-content: flex-end;
+    align-items: center;     
+}
+.cube{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.accountname{
+    margin-right: 0.25em;
+    background-color: transparent;
+    width: 1%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1; 
+    
+}
+/* HEADER */ 
+/* DEFAULT */ 
+
+
+
+/* SLIDER */ 
+.slider{
+    
+    width: 100%;
+    height: 270px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-image: url(../img/wallpp.jpg);
+    position: relative;
+    top: -50px;
+    z-index: 0;
+}
+/* SLIDER */ 
+
+
+
+/* MAIN */ 
+main{
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    height: 1000px;
+    background-color: rgba(57, 55, 68, 0.226);
+    border: 0px solid rgb(0, 0, 0);
+    margin-inline: auto;
+    padding: 0;
+    position: relative;
+    top: -50px; 
+    border-collapse: collapse;
+    
+}
+.main-menu{
+    color: white;
+    font-size: 0.9em;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: rgb(42, 39, 44);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 9px;
+    justify-content: center;
+    align-items: start;
+    
+}
+.main-content{ 
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 20px 20px;
+    gap: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    height: 2000px; 
+    border-collapse: collapse;
+    margin: 0;
+    
+}
+.home-content{
+    color: white;
+    border: 1px solid black;
+    height: 100%;
+}
+.box, .box0{
+    color: white;
+    width: 400px;
+    height: 117px;
+    font-size: 1.2em;
+    color: white;
+    border: 4px solid rgb(45, 63, 102);
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+    background-repeat: no-repeat;   
+    display: flex;
+    align-items: flex-end;
+}
+.voltar{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 102, 128, 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    opacity: 90%;
+}
+/* Mobile*/
+.openmenu{
+    display: none;
+    width: 60vw;
+    height: 50vh;
+    background: linear-gradient(#1a1b18 ,  rgb(39, 42, 48) , #1a1b18);
+    position: fixed;
+    top: 10px;
+    left: 0;
+    
+    border-radius: 10px;
+    z-index: 3;
+}
+.openaccount{
+    display: none;
+    width: 60vw;
+    height: 50vh;
+    background: linear-gradient(#1a1b18 ,  rgb(39, 42, 48) , #1a1b18);
+    position: fixed;
+    top: 10px;
+    left: 0;
+    
+    border-radius: 10px;
+    z-index: 3;
+}
+
+
+
+/* Changes low screen*/
+@media(max-width:700px){
+    body{
+        background: linear-gradient(#bbf745, #110f11, #ffd30d);
+     }
+
+
+    .headernav {  
+        content-visibility: hidden;    
+    }
+
+    .menubutton:hover .openmenu{
+
+        display: flex;
+    }
+
+    .openmenu nav ul {
+        display: flex;
+        flex-direction: column;  
+        margin-left: 15px;  
+        margin-top: 15px;
+    }
+
+    .logo{
+        width: 110px;
+        height: 100%;
+        }
+
+    .menubutton{
+        display: initial;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(133, 195, 214);
+        border-radius: 5px;
+    }
+
+    .slider{  
+       height: 160px;
+       background-size: 100%;
+    }
+
+    main{
+        width: 98%;    
+    }
+    .main-menu{
+        font-size: 0.8em;
+        height: 25px;
+    }
+    .main-content{
+        justify-content: center;
+        align-content: flex-start;
+    }
+    .box, .box0{
+        font-size: 1.2em;
+        color: white;
+        height: 80px;
+        border: 4px solid rgb(45, 63, 102);
+        box-shadow: 5px 5px 10px black;
+        border-radius: 5px;
+        
+    }
+    .voltar{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0, 102, 128, 30%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.4em;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        opacity: 90%;
+    }
+}
+
+/* TEMP IMGBOX*/
+
+.mainbox1{   
+    background-image: url(../img/pixels.webp);
+    background-size: 100%;
+    background-position: 0;    
+}
+.mainbox2{  
+    background-image: url(../img/jettroyalit.png);
+    background-size: 100%;
+    background-position: 0;
+}
+.mainbox3{ 
+    background-image: url(../img/maps.png);
+    background-size: 100%;
+    background-position: 0;
+}
+.mainbox4{
+    
+    background-image: url(../img/pc.webp);
+    background-size: 100%;
+    background-position: 0;
+}
+.mainbox5{
+    
+    background-image: url(../img/train.png);
+    background-size: 100%;
+    background-position: 0;
+}
+.mainbox6{
+    background-image: url(../img/paradox.webp);
+    background-size: 100%;
+}
+.mainbox7{
+    background-image: url(../img/coachservice.webp);
+    background-size: 100%;
+}
+.mainbox8{
+    background-image: url(../img/LFG.webp);
+    background-size: 100%;
+}
+.mainbox0{
+    background-image: url(../img/voltar1.webp);
+    background-size: 100%;
+    background-position: 0;
+}
+
+.mainbox-background{
+    font-size: 1em;
+    height: 1.6em;
+    width: 100%;
+    background-color: rgba(5, 6, 8, 0.781);
+    border-radius: 4px;
+    padding: 0px 10px;
+    text-align: center;
+}
