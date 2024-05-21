@@ -342,3 +342,24 @@ main{
     padding: 0px 10px;
     text-align: center;
 }
+
+
+/* Pixels*/
+
+.pixel-content-background {
+    border: 2px solid white;
+    width: 95%;
+    height: 800px;
+    display: flex;
+}
+.puxel-content-nav{
+    width: 19%;
+    height: 100%;
+    border: 2px solid green;
+}
+
+.pixel-content-main-background{
+    width: 80%;
+    height: 100%;
+    border: 2px solid red;
+}
