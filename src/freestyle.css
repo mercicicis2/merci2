@@ -94,6 +94,8 @@ header nav ul{
     border-radius: 50%;
     justify-content: flex-end;
     align-items: center;
+    background-image: url(../img/github.png);
+    background-size: 100%;
     
 }
 .accountname{
