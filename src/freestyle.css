@@ -24,7 +24,7 @@ body{
 /* HEADER */ 
 /* DEFAULT */ 
 header{
-    z-index: 1;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -36,6 +36,8 @@ header{
     border-radius: 5px;
     margin-inline: auto;
     font-size: 1.2em;
+
+    z-index: 1;
 }
 .menubutton{
 display: none;
@@ -125,7 +127,6 @@ header nav ul{
     position: relative;
     background-repeat: no-repeat;
     top: -10px;
-    z-index: 0;
 }
 /* SLIDER */ 
 
@@ -145,8 +146,7 @@ main{
     top: -50px; 
     border-collapse: collapse;
     color: white;
-    font-size: 1em;
-    
+    font-size: 1em; 
 }
 .main-menu{
     color: white;
@@ -207,9 +207,8 @@ main{
     position: fixed;
     top: 10px;
     left: 0;
-    
     border-radius: 10px;
-    z-index: 3;
+    z-index: 5;
 }
 .openaccount{
     display: none;
@@ -221,7 +220,7 @@ main{
     left: 0;
     
     border-radius: 10px;
-    z-index: 3;
+    z-index: 5;
 }
 
 
@@ -230,6 +229,7 @@ main{
 @media(max-width:700px){
     body{
         background: linear-gradient(#bbf745, #110f11, #ffd30d);
+        z-index: 1;
      }
 
 
