@@ -54,7 +54,7 @@ header{
     top: 10px;
     left: 0;
     border-radius: 10px;
-    z-index: 5;
+    z-index:3;
 }
 .openaccount{
     display: none;
@@ -65,7 +65,7 @@ header{
     top: 10px;
     right: 0;
     border-radius: 10px;
-    z-index: 5;
+    z-index:3;
 }
 
  /* PC HEADER */
@@ -129,19 +129,29 @@ header nav ul{
 
 
 
-/* SLIDER */ 
+/* SLIDER LIMPAR CODIGO */ 
 .slider{ 
     display: flex;
     width: 100%;
     height: 240px;
-    border: 1px solid rgba(0, 0, 0, 0);
-    background-image: url(../img/wallpp.jpg);
-    background-size: 100%;
-    position: relative;
+    border: 1px solid rgb(0, 225, 255);
+    background-size:100%;
     background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
     top: -10px;
+    margin: 0;
+    padding: 0;
 }
 /* SLIDER */ 
+.slider-img{
+    display: flex;
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+}
 
 
 
@@ -160,13 +170,14 @@ main{
     border-collapse: collapse;
     color: white;
     font-size: 1em; 
+    z-index: 0;
 }
 .main-menu{
     color: white;
     font-size: 0.9em;
     display: flex;
     width: 100%;
-    height: auto;
+    height: 40px;
     background-color: rgb(42, 39, 44);
     border: 1px solid rgb(0, 0, 0);
     padding: 9px;
@@ -175,7 +186,6 @@ main{
     
 }
 .main-content{ 
-    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -198,6 +208,9 @@ main{
 /* ^##################^ */ 
 
 
+/* v##################v */
+/* v###### GUIAS #####v */ 
+/* v##################v */ 
 
 .box, .box0{
     color: white;
@@ -213,102 +226,21 @@ main{
     align-items: flex-end;
 }
 
-
+/* ^##################^ */
+/* ^###### GUIAS #####^ */ 
+/* ^##################^ */ 
 
 
 /* Changes low screen*/
-@media(max-width:700px){
-    body{
-        background: linear-gradient(#bbf745, #110f11, #ffd30d);
-        z-index: 1;
-     }
 
-/* Header on mobile */
-/* header menu mobile*/
-    .menubutton{
-        display: initial;
-        width: 35px;
-        height: 35px;
-        background-color: rgb(133, 195, 214);
-        border-radius: 5px;
-    }
-    .openmenu nav ul {
-        display: flex;
-        flex-direction: column;  
-        margin-left: 15px;  
-        margin-top: 15px;
-    }  
-    .menubutton:hover .openmenu{
-        display: flex;
-    }
-   
-
-
- /* Header account*/  
- .account:hover .openaccount{
-    display: flex;
-}
-
-
-
-
- /* Logo */  
-    .logo{
-        width: 110px;
-        height: 100%;
-    }
-
-
-
-/* Header pc navigation*/  
-    .headernav {  
-        content-visibility: hidden;    
-    }
-
-
-
-
-/* Slider Mobile */
-    .slider{  
-       height: 160px;
-       background-size: 100%;
-    }
-
-
-/* Main Mobile */
-    main{
-        width: 98%;    
-    }
-    .main-menu{
-        display: flex;
-        flex-direction: column;
-        font-size: 0.8em;
-        height: 35px;
-    }
-    .main-content{
-        justify-content: center;
-        align-content: flex-start;
-    }
-
-/* Guides page box */
-    .box, .box0{
-        font-size: 1.2em;
-        color: white;
-        height: 80px;
-        border: 4px solid rgb(45, 63, 102);
-        box-shadow: 5px 5px 10px black;
-        border-radius: 5px;
-        
-    }
-
-}
 
 /* TEMP IMGBOX*/
 
 .mainbox1{   
     background-image: url(../img/pixels.webp);
     background-size: 100%;
-    background-position: 0;    
+    background-position: 0;   
+    
 }
 .mainbox2{  
     background-image: url(../img/jettroyalit.png);
@@ -360,24 +292,35 @@ main{
 }
 
 
-/* Pixels*/
+/* v##################v */
+/* v##### AGENTES ####v */ 
+/* v##################v */ 
 
 
-.puxel-content-nav{
-    width: 10%;
+/* LEFT BAR */
+
+.content-left{
+    width: 15%;
     height: 100%;
     border: 0px solid green;
+    
 }
 
-.pixel-content-main-background{
-    width: 70%;
+/* MID BAR BAR */
+
+.content-main{
+    width: 65%;
     height: 100%;
     border: 1px solid red;
-    padding-left: 40px;
+    padding: 10px;
+    padding-bottom: 40px;
 }
 
-.pixel-content-xp {
-width: 15%;
+/* RIGHT BAR */
+
+.content-right{
+width: auto;
+padding : 10px;
 }
 
 .inicio{
@@ -385,11 +328,13 @@ width: 15%;
 }
 
 .spacebetweentest{
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 0px
 }
 
+
 .agent-overview{
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     background-image: url(../img/jettselectagent.png);
     background-repeat:no-repeat;
@@ -398,39 +343,164 @@ width: 15%;
    
 }
 
+/* card content*/
+
 .box-agent-test{
     display: flex;
-    width: 600px;
-    height: 80px;
-    object-fit: cover;
-    
-    
+    width: 60%;
+    height: 90px;
+    object-fit: cover;  
 }
 .img1{
-    width: 20%;
-    height: 100%;
+    width: 90px;
+    height: 90px;
     border-radius: 10px 0 0 10px;
 }
 
 .description{
     height: 100%;
-    width: 80%;
+    width: 100%;
     border-radius: 0 10px 10px 0;
     background-color: rgb(41, 41, 43);
 }
 
 
-.testdesaparecelabel {
-    display: flex;
-    justify-content: space-between;
-    width: -1px;
-    height: -1px;
-    margin: 0;
-    padding: 0px;
-    border: none;
-    white-space: nowrap;
 
-    
+/* v##################v */
+/* v###### MOBILE ####v */ 
+/* v##################v */ 
+
+
+@media(max-width:700px){
+    body{
+        z-index: 1;
+     }
+
+/* Header on mobile */
+/* header menu mobile*/
+    .menubutton{
+        display: initial;
+        width: 35px;
+        height: 35px;
+        background-color: rgb(133, 195, 214);
+        border-radius: 5px;
+    }
+    .openmenu nav ul {
+        display: flex;
+        flex-direction: column;  
+        margin-left: 15px;  
+        margin-top: 15px;
+    }  
+    .menubutton:hover .openmenu{
+        display: flex;
+    }
+   
+
+ /* Header account*/  
+ .account:hover .openaccount{
+    display: flex;
+}
+
+ /* Logo */  
+    .logo{
+        width: 110px;
+        height: 100%;
+    }
+
+
+
+/* Header pc navigation*/  
+    .headernav {  
+        content-visibility: hidden;    
+    }
+
+
+
+
+/* Slider Mobile */
+    .slider{  
+       height: 160px;
+       background-size: 100%;
+    }
+    .slider-img{
+        height: 160px;
+    }
+
+
+/* Main Mobile */
+    main{
+        width: 98%;    
+    }
+    .main-menu{
+        background: linear-gradient(90deg, rgb(52, 195, 252) 70%, rgb(92, 122, 139) 43%);
+        color: #10110f;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        font-size: 0.8em;
+        height: 35px;
+    }
+    .main-content{
+        justify-content: center;
+        align-content: flex-start;
+        padding: 20px;
+    }
+
+/* Guides page box */
+    .box, .box0{
+        font-size: 1.2em;
+        color: white;
+        height: 80px;
+        
+        border: 4px solid rgb(45, 63, 102);
+        box-shadow: 5px 5px 10px black;
+        border-radius: 5px;
+        
+    }
+
+
+    .content-left{
+        display: none;
+    }
+    .content-right{
+        display: none;
+    }
+
+
+    /* content-main */
+    .content-main{
+        width: 100%; 
+        padding : 10px;
+        border: none;
+        padding: 0;
+    }
+
+    .box-agent-test{
+        display: flex;
+        width: 100%;
+        height: 70px;
+    }
+    .img1{
+        width: 80px;
+        height: 100%;
+    }
+
+     .box-agent-test-title {
+        margin-top: -15px ;
+    }
+    .box-agent-test-p{
+        font-size: 0.8em;
+        padding-top: 3px
+        
+    }
+    .description {
+        padding-left: 10px !important;
+    }
+   
     
 
 }
+
+/* ^##################^ */
+/* ^###### MOBILE ####^ */ 
+/* ^##################^ */
