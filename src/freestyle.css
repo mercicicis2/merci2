@@ -21,7 +21,8 @@ body{
     flex-direction: column;
     background: linear-gradient(#1a1b18, #10110f, #1a1b18);
     position: relative;
-    top: 10px
+    top: 10px;
+    height: auto;
 }
 
 
@@ -160,7 +161,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 95vw;
-    height: 1000px;
+    height: auto;
     background-color: rgba(57, 55, 68, 0.226);
     border: 0px solid rgb(0, 0, 0);
     margin-inline: auto;
@@ -196,7 +197,7 @@ main{
     gap: 20px;
     border: 1px solid rgb(0, 0, 0);
     width: 100%;
-    height: 2000px; 
+    height: auto; 
     border-collapse: collapse;
     margin: 0;
     background: linear-gradient(rgb(27, 82, 119) , transparent 15%);
@@ -351,6 +352,7 @@ padding : 10px;
     max-width: 70%;
     height: 90px;
     object-fit: cover;  
+    margin-top: 30px;
 }
 .img1{
     width: 130px;
@@ -365,7 +367,31 @@ padding : 10px;
     background-color: rgb(41, 41, 43);
 }
 
+.box-agent-test-title {
+    margin-top: -15px ;
+    font-size: 100%;
+}
+.box-agent-test-p{
+    font-size: 90%;
+    padding-top: 3px
+}
 
+/* A unreal so difere no font weight, o h1 fica com o msm tamanho do <p> */
+
+
+.recomendados{
+    background-color: red;
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+   
+}
+footer{
+    display: flex;
+    background: blue;
+    position: relative;
+    
+}
 
 /* v##################v */
 /* v###### MOBILE ####v */ 
@@ -493,9 +519,10 @@ padding : 10px;
 
      .box-agent-test-title {
         margin-top: -15px ;
+        font-size: 100%;
     }
     .box-agent-test-p{
-        font-size: 0.8em;
+        font-size: 80%;
         padding-top: 3px
         
     }
