@@ -186,23 +186,6 @@ main{
     align-items: start;
     
 }
-.main-content{ 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: flex-start;
-    padding: 20px 0px;
-    gap: 20px;
-    border: 1px solid rgb(0, 0, 0);
-    width: 100%;
-    height: auto; 
-    border-collapse: collapse;
-    margin: 0;
-    background: linear-gradient(rgb(27, 82, 119) , transparent 15%);
-    
-}
 
 /* ^##################^ */
 /* ^#### ALL PAGES ###^ */ 
@@ -304,13 +287,14 @@ main{
     width: 15%;
     height: 100%;
     border: 0px solid green;
+    margin: 0;
     
 }
 
 /* MID BAR BAR */
 
 .content-main{
-    width: 65%;
+    width: 70%;
     height: 100%;
     border: 1px solid red;
     padding: 10px;
@@ -326,11 +310,6 @@ padding : 10px;
 
 .inicio{
     justify-content: left;
-}
-
-.spacebetweentest{
-    justify-content: flex-start;
-    gap: 0px
 }
 
 
