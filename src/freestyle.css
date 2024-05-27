@@ -385,7 +385,7 @@ footer{
 /* v##################v */ 
 
 
-@media(max-width:700px){
+@media(max-width:768px){
     body{
         z-index: 1;
      }
@@ -446,7 +446,7 @@ footer{
         width: 98%;    
     }
     .main-menu{
-        background: linear-gradient(90deg, rgb(52, 195, 252) 70%, rgb(92, 122, 139) 43%);
+        
         color: #10110f;
         font-weight: bold;
         display: flex;
