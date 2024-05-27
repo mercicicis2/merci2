@@ -187,10 +187,7 @@ main{
     height: 40px;
     background-color: rgb(42, 39, 44);
     border: 1px solid rgb(0, 0, 0);
-    padding: 9px;
-    justify-content: center;
-    align-items: start;
-    
+    padding-inline: 9px;
 }
 
 /* ^##################^ */
@@ -294,6 +291,7 @@ main{
     height: 100%;
     border: 0px solid green;
     margin: 0;
+    
     
 }
 
