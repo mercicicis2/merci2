@@ -38,4 +38,14 @@ var tmp = setInterval (mudaae, 3500);
 
 console.log("hello world");
 
-
+function testoneclick(){
+    let way = document.getElementById("someds").style.display;
+    if(document.getElementById("someds").style.display == "none"){
+        document.getElementById("someds").style.display = "flex";
+        console.log("tirou");
+    }
+    else{
+        document.getElementById("someds").style.display = "none"
+    }
+    
+}

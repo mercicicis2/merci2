@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="freestyle.css">
 </head>
 <body id="body">
-<img src="../img/split.jpg" class="slider-img">
-
+<img src="../img/split.jpg" class="slider-img"> 
 <div id="slider" class="slider-background-improviso">
     <header id="mercicici">
 
@@ -66,42 +65,55 @@
         <div id="maincontent" class="main-content bg-gradient-to-b from-cyan-800 from-0% to-transparent to-15% m-0 pt-5 pb-5 w-full h-auto flex flex-row items-start justify-evenly gap-0 ">
 
               <!--MAIN NAV-->
-              
-                <div class="content-left">
-                    <nav>
-                        <ul>
-                            <li><label>AGENTES : </label>
-                                <select style="color: black; font-weight:bolder;">
-                                    <option>JETT</option>
-                                    <option>RAZE</option>
-                                    <option>REYNA</option>
-                                </select>
-                            </li>
-                            <hr>
-                            <br>
-                            <select style="width: 100%; height: 100%; background: linear-gradient(90deg, rgb(46, 168, 199) 50%, rgb(52, 60, 71) 1%); " name="" id="">
-                                <option >MAESTRIA</option>
-                                <option >Duelistas : 65%</option>
-                                <option >Jett : 30%</option>
-                                <option >Raze : 76%</option>
-                                <option >Reyna : 99%</option>
-                                <option >infelizmente fui burro nesse frame</option>
-        
-                            </select>
-                            <br><br><br><br><br><br><br>
-                            <li>Introducao: ✔️</li>
-                            <li>- Comportamento ✔️ </li>
-                            <li>- Uso de Habilidades 🔍</li>
-                            <br>
-                            <li>Mapas:</li> 
-                            <li>- Ascent ✔️</li>
-                            <li>- Split 🔍</li>
-                            <li>- Bind 🔍</li>
+              <div class="content-left flex-none sm:flex flex-col gap-y-3 w-15% min-w-52" >
 
-                        </ul>
-                    </nav>
-                
+                <!--AREA NAME-->
+                <div class=" w-100% h-14 ml-1 mr-1 p-2 rounded flex flex-col border-sky-500 border-2">
+                    <div class="content-left-title-bar w-full flex justify-between">Atualizações</div>
                 </div>
+
+                <!--BOXs-->
+                <div class="bg-zinc-800 w-100% h-auto ml-1 mr-1 p-1.5 rounded flex flex-col">
+                    <div class="content-left-title-bar w-full bg-teal-600 flex justify-between">Maestria<span class="text-sm/7">24/05/24</span></div>
+                    <div class="content-left-title-bar-2 w-full bg-black flex justify-center"><span class="text-sm/7">[=========]</span></div>
+                    <div class="content-left-info-bar">Jett icon [===========]<br>Reyna [===========] <br> Raze [===========] <br> mostrar mais</div>
+                </div>
+
+                <div class="bg-zinc-800 w-100% h-auto ml-1 mr-1 p-1.5 rounded ">
+                    <div class="content-left-title-bar w-full bg-teal-600 flex justify-between "><span class="text-blue-500">EFEXIS</span><span class="text-sm/7">24/05/24</span></div>
+                    <div class="content-left-title-bar w-full bg-black flex justify-center"><span class="text-sm/7">Patch 19.05.03</span></div>
+                    <div class="content-left-info-bar">
+                    <label class="flex justify-center w-full">Documentacao:</label>
+
+                    <ul class="">
+                        <!--css #vapo:checked ~ #doc_jett_1 > #doc_jett_1l2 n esquece do ~ e do > para acessar o hierach-->
+                        <input id="vapo" class="vapo hidden" type="checkbox">
+                        <label id="" for="vapo" class="bg-pink-400 w-auto h-4">asdasdd</label> 
+                        <li id="doc_jett_1" class=" bg-slate-500 w-full">               
+
+                            <div onclick="testoneclick()" class="bg-pink-400 w-auto h-4"></div>
+
+                            <div id="someds" class="bg-green-500 w-auto h-4"></div>     
+                            
+                            
+                            <ul id="doc_jett_1l2" class="h-auto bg-slate-600 indent-5 rounded">
+                                <li>Dash</li>
+                                <li>Cloud</li>
+                                <li>Updraft</li>
+                                <li>Ultimate</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                
+
+                    </div>
+
+                </div>
+
+                
+            
+            </div>
             <!--MAIN CONTENT-->
 
                 <div class="content-main">
