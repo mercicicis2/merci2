@@ -1,3 +1,8 @@
+let jjdatabase = {
+
+}
+
+
 var caminhoimg;
 let temptestint = true;
 
@@ -11,7 +16,7 @@ function mudaae(){
 
     if(temptestint == 2){
         document.getElementById("slider").setAttribute("src","../img/fracture.jpg");
-        document.getElementById("parceirosgameicon").setAttribute("src","../img/othericons/lol.png");
+        document.getElementById("parceirosgameicon").setAttribute("src","../img/othericons/lol.jpg");
     
     console.log("chrollo")
     }
