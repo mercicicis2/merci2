@@ -298,7 +298,7 @@ main{
 /* MID BAR BAR */
 
 .content-main{
-    width: 70%;
+    width: auto;
     height: 100%;
     border: 0px solid red;
     padding: 10px;
@@ -321,24 +321,24 @@ border: 0px solid rgb(1, 199, 172);
 }
 
 
-.agent-overview{
-    max-width: 80%;
+.agent-overview{ 
     height: auto;
+    max-height: 600px;  
     background-image: url(../img/jettselectagent.png);
     background-repeat:no-repeat;
     background-size: 100%;
     border-radius: 5px;
-   
 }
 
 /* card content*/
 
 .box-agent-test{
+    width: auto;
     display: flex;
-    min-width: 400px;
-    max-width: 70%;
-    height: 90px;
-    object-fit: cover;  
+    min-width: auto;
+    max-width: 600px;
+   
+     
     margin-top: 30px;
 }
 .img1{
@@ -349,15 +349,15 @@ border: 0px solid rgb(1, 199, 172);
 }
 
 .description{
-    height: 100%;
-    width: 100%;
+    width:20px;
+    height: auto;
     border-radius: 0 10px 10px 0;
     background-color: rgb(41, 41, 43);
 }
 
 .box-agent-test-title {
     margin-top: -15px ;
-    font-size: 100%;
+    font-size: auto;
 }
 .box-agent-test-p{
     font-size: 90%;
