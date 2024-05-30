@@ -51,8 +51,12 @@ header{
     z-index: 1;
 }
 
+.menubutton{
+display: none;
+}
 /* Mobile menu background*/
 .openmenu{
+    content: none;
     display: none;
     width: 60vw;
     height: 50vh;
@@ -76,9 +80,7 @@ header{
 }
 
  /* PC HEADER */
-.menubutton{
-display: none;
-}
+
 
 .logo{
 margin-left: -10px;
@@ -406,12 +408,16 @@ footer{
         margin-left: 15px;  
         margin-top: 15px;
     }  
+    /*
     .menubutton:hover .openmenu{
         display: flex;
     }
+    */ 
    
 
  /* Header account*/  
+ /**/  
+ /**/  
  .account:hover .openaccount{
     display: flex;
 }
@@ -519,11 +525,14 @@ footer{
     .description {
         padding-left: 10px !important;
     }
-   
+    
+    
     
 
 }
-
+#tempasdasd:checked ~ .label-menubutton .menubutton .openmenu {
+    background: linear-gradient(150deg, pink, pink);
+   }
 
 /* ^##################^ */
 /* ^###### MOBILE ####^ */ 
@@ -533,7 +542,3 @@ footer{
 /* Area de testes */
 
 
-
-#vapo:checked ~ #doc_jett_1 > #doc_jett_1l2{
-    display: none;
-}
