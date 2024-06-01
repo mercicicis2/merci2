@@ -22,25 +22,24 @@
 
 
     <div class="slider-background-improviso">
-
-
         <header id="mercicici"> 
             <!-- estrutura checkbox em vez de hover para mobile-->
             
                 <!-- Mobile menu -->
-                <div class="menubutton">
-                    <div class="openmenu">
-                    <nav>
-                        <ul>
-                            <a href="inicio.html"><li>Inicio</li></a>
-                            <a href="guias.html"><li>Guias</li></a>
-                            <li>Comunidade</li>
-                            <li>Campeonatos</li>
-                            <li>Loja</li>
-                        </ul>
-                    </nav>
-                    </div>
+            <div class="menubutton">
+                <div class="openmenu">
+                <nav>
+                    <ul>
+                        <a href="inicio.html"><li>Inicio</li></a>
+                        <a href="guias.html"><li>Guias</li></a>
+                        <li>Comunidade</li>
+                        <li>Campeonatos</li>
+                        <li>Loja</li>
+                    </ul>
+                </nav>
                 </div>
+            </div>
+
             <a href="inicio.html"id="iddiv" class="logo"></a>
     
             <nav class="headernav">
@@ -54,9 +53,8 @@
             </nav>
     
             <!--Account-->
-            <label class="account">
-                <div class="openaccount">
-                </div>
+            <div class="account">
+                <div class="openaccount"></div>
             
                 <span class="accountname">
                     <span class="mail-icon">✉️</span>
@@ -66,7 +64,7 @@
                 </span>
                 
                 <a href="https://mercicicis2.github.io/merci2/src/guias.html"class="cube"></a>
-            </label>
+            </div>
             
         </header>  
 
@@ -89,12 +87,12 @@
                 Tropinha da Nini VS Sentinels
             </span>
    
-            <span style=" display: flex; gap: 10px"></span> 
-        
+            <span style=" display: flex; gap: 10px"></span>       
     </div>
+
     <div id="maincontent" class="main-content bg-gradient-to-b from-cyan-800 from-0% to-transparent to-15% m-0 pb-5 w-full h-auto flex flex-row items-start justify-evenly gap-0 ">
 
-          <!--MAIN NAV-->
+         <!--MAIN NAV-->
           
          <!-- LEFT MAIN NAV-->
 
@@ -106,11 +104,21 @@
                     <div class="content-left-title-bar w-full flex justify-between">Atualizações</div>
                 </div>
 
-                <!--BOXs-->
-                <div class="bg-zinc-800 w-100% h-auto ml-1 mr-1 p-1.5 rounded flex flex-col">
-                    <div class="content-left-title-bar w-full bg-teal-600 flex justify-between">VALORANT <span class="text-sm/7">24/05/24</span></div>
-                    <div class="content-left-title-bar-2 w-full bg-black flex justify-center"><span class="text-sm/7">Patch 19.05.03</span></div>
-                    <div class="content-left-info-bar">Dash : new behavior</div>
+                <!--BOXs clb = content left box-->
+                <div id="clb0" class="bg-zinc-800 w-100% h-auto ml-1 mr-1 p-1.5 rounded flex flex-col">
+                    <!-- simple details-->
+                    <!-- clt > content left > title and patch bar-->
+                    <div id="cltb" class="cltb w-full bg-teal-600 flex justify-between">VALORANT <span class="text-sm/7">24/05/24</span></div>
+                    <div id="clpb" class="clpb w-full bg-black flex justify-center"><span class="text-sm/7">Patch 19.05.03</span></div>
+
+                    <!-- content left details background -->
+                    <div class="cldbg0 cldbg bg-amber-600">
+
+                        <div class="cldbg0 cldbimg"></div><div class="clan0 clan"></div>
+                        <p class="cldp0 cldp"></p>
+                    </div>
+                    
+                    <div></div>
                 </div>
 
                 <div class="bg-zinc-800 w-100% h-auto ml-1 mr-1 p-1.5 rounded ">
