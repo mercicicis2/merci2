@@ -142,7 +142,7 @@ header nav ul{
 .slider-background-improviso{ 
     display: flex;
     width: 100%;
-    height: 240px;
+    height: 340px;
     border: 1px solid rgb(0, 225, 255);
     background-size:100%;
     background-repeat: no-repeat;
@@ -154,9 +154,10 @@ header nav ul{
 }
 /* SLIDER */ 
 .slider-img{
+    object-fit: cover;
     display: flex;
     width: 100%;
-    height: 240px;
+    height: 340px;
     position: absolute;
     top: -10px;
     z-index: -1;
